@@ -209,26 +209,30 @@ a.nav-item {
     }
 
     .bio {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .container {
         align-items: center;
         padding: 0px;
-        width: 95%;
+        width: 100%;
     }
 
     .project-title {
-        font-size: 20px; 
+        font-size: 22px; 
         font-weight: bold;
     }
 
+    .project-outlet {
+        font-size: 18px;
+    }
+
     .project-desc {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .project-method {
-        font-size: 16px;
+        font-size: 18px;
     }
     
     /* Make cards wider on mobile */
