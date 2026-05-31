@@ -251,3 +251,149 @@ a.nav-item {
         width: 95%;
     }
 }
+/* ── Tabs ── */
+.tabs-cont {
+    width: 60%;
+    margin: 0 auto 0 auto;
+    padding: 0 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .tabs-cont {
+        width: 90%;
+        padding: 0;
+    }
+}
+
+.tabs-nav {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid #333;
+    margin-bottom: 0;
+}
+
+.tab-btn {
+    font-family: "poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    padding: 8px 28px 10px 0;
+    cursor: pointer;
+    opacity: 0.45;
+    letter-spacing: 0.01em;
+    transition: opacity 0.18s ease, border-color 0.18s ease;
+}
+
+.tab-btn:hover {
+    opacity: 0.75;
+}
+
+.tab-btn.active {
+    opacity: 1;
+    border-bottom: 3px solid #997950;
+}
+
+/* ── Writing tab ── */
+.writing-cont {
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .writing-cont {
+        width: 90%;
+        padding: 0;
+    }
+}
+
+.writing-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.writing-item {
+    border-bottom: 1px solid #e0dbd4;
+}
+
+.writing-item:first-child {
+    border-top: none;
+}
+
+.writing-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 20px;
+    text-decoration: none;
+    padding: 18px 0;
+    transition: opacity 0.18s ease;
+}
+
+.writing-link:hover {
+    opacity: 0.65;
+}
+
+.writing-title {
+    font-family: "bitter", sans-serif;
+    font-size: 19px;
+    color: #333;
+    line-height: 1.35;
+    flex: 1 1 auto;
+}
+
+.writing-meta {
+    font-family: "poppins", sans-serif;
+    font-size: 13px;
+    color: #888;
+    white-space: nowrap;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.writing-sep {
+    color: #ccc;
+}
+
+.writing-pub {
+    font-weight: 600;
+    color: #777;
+}
+
+@media screen and (max-width: 640px) {
+    .writing-link {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .writing-title {
+        font-size: 18px;
+    }
+    .writing-meta {
+        font-size: 13px;
+    }
+}
+
+.writing-more {
+    font-family: "bitter", sans-serif;
+    font-size: 17px;
+    color: #555;
+    margin-top: 28px;
+    margin-bottom: 60px;
+}
+
+/* ── Tab panel spacing ── */
+#tab-data {
+    margin-top: 30px;
+}
+
+#tab-writing {
+    margin-top: 10px;
+}

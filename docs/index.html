@@ -22,12 +22,63 @@
         </div>
     </div>
 
-    <div class="subhead">
-        <div class="me-head">Selected data works</div>
+    <!-- Tab navigation -->
+    <div class="tabs-cont">
+        <div class="tabs-header">
+            <div class="me-head" style="margin-bottom: 20px;">Selected works</div>
+            <div class="tabs-nav">
+                <button class="tab-btn active" onclick="switchTab('data')">Data</button>
+                <button class="tab-btn" onclick="switchTab('writing')">Writing</button>
+            </div>
+        </div>
     </div>
 
+    <!-- DATA TAB -->
+    <div id="tab-data" class="tab-panel">
     <div class="container">
         <div class="row project-cont">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 projects-wrapper">
+                <a href="https://missionlocal.org/2026/02/sf-mayor-daniel-lurie-influencer-instagram-small-business-social-media/" target="_blank" class="projects-link">
+                    <div class="projects">
+                        <div class="project-img">
+                            <img src="projects/lurie-social-media.jpg" alt="Mayor Lurie's Instagram small business visits">
+                        </div>
+                        <div class="project-title">Lurie, the small business influencer</div>
+                        <div class="project-outlet">Mission Local</div>
+                        <div class="project-desc">Tracking Lurie's small business Instagram visits and asking those businesses how they felt.</div>
+                        <div class="project-method">Datawrapper, Canva</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 projects-wrapper">
+                <a href="https://missionlocal.org/2026/01/sf-mission-district-street-teams/" target="_blank" class="projects-link">
+                    <div class="projects">
+                        <div class="project-img">
+                            <img src="projects/street-teams.jpg" alt="Mission District street teams explainer">
+                        </div>
+                        <div class="project-title">The Mission's street teams, explained</div>
+                        <div class="project-outlet">Mission Local</div>
+                        <div class="project-desc">Meet the five groups that make up the Mission's street team and understand who does what.</div>
+                        <div class="project-method">Adobe Illustrator, ai2html</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4 projects-wrapper">
+                <a href="https://missionlocal.org/2026/01/sf-charter-reform-working-group/" target="_blank" class="projects-link">
+                    <div class="projects">
+                        <div class="project-img">
+                            <img src="projects/charter-reform-working-group.jpg" alt="SF charter reform working group">
+                        </div>
+                        <div class="project-title">Inside S.F.'s charter reform group</div>
+                        <div class="project-outlet">Mission Local</div>
+                        <div class="project-desc">A visual guide to the 31-person working group rewriting S.F.'s charter.</div>
+                        <div class="project-method">HTML, CSS, Adobe Illustrator</div>
+                    </div>
+                </a>
+            </div>
+
             <div class="col-12 col-sm-6 col-md-4 col-lg-4 projects-wrapper">
                 <a href="https://missionlocal.org/2025/02/live-updates-daniel-luries-administration-whos-in-whos-out/" target="_blank" class="projects-link">
                     <div class="projects">
@@ -161,5 +212,38 @@
             </div>
         </div>
     </div>
+    </div> <!-- end tab-data -->
+
+    <!-- WRITING TAB -->
+    <div id="tab-writing" class="tab-panel" style="display:none;">
+        <div class="writing-cont">
+            <ul class="writing-list">
+                <li class="writing-item">
+                    <a href="https://missionlocal.org/2025/10/sf-prop-e-commission-streamlining-gets-messy/" target="_blank" class="writing-link">
+                        <span class="writing-title">Prop. E was supposed to rein in S.F. mayor's power. Instead, it's recommending the opposite.</span>
+                        <span class="writing-meta"><span class="writing-pub">Mission Local</span><span class="writing-sep">·</span><span class="writing-date">Oct. 3, 2025</span></span>
+                    </a>
+                </li>
+                <li class="writing-item">
+                    <a href="https://missionlocal.org/2026/03/sf-sales-tax-data-excelsior-tourism/" target="_blank" class="writing-link">
+                        <span class="writing-title">Excelsior's post-pandemic recovery shows it can pay to shrug off tourism</span>
+                        <span class="writing-meta"><span class="writing-pub">Mission Local</span><span class="writing-sep">·</span><span class="writing-date">March 10, 2025</span></span>
+                    </a>
+                </li>
+            </ul>
+            <p class="writing-more">Read more of my work at <a href="https://missionlocal.org/author/xueerl/" target="_blank" class="nav-item">Mission Local</a>.</p>
+        </div>
+    </div> <!-- end tab-writing -->
+
+    <script>
+        function switchTab(tab) {
+            document.getElementById('tab-data').style.display = tab === 'data' ? '' : 'none';
+            document.getElementById('tab-writing').style.display = tab === 'writing' ? '' : 'none';
+            document.querySelectorAll('.tab-btn').forEach(function(btn) {
+                btn.classList.remove('active');
+            });
+            event.currentTarget.classList.add('active');
+        }
+    </script>
 </body>
 </html>
