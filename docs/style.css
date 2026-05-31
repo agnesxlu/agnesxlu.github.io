@@ -50,8 +50,19 @@ a.nav-item {
     padding: 10px 25px 0px 25px;
 }
 
+.subhead {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    padding: 0px 25px;
+}
+
 @media screen and (max-width: 768px) {
     .bio-cont {
+        width: 90%;
+    }
+
+    .subhead {
         width: 90%;
     }
 }
