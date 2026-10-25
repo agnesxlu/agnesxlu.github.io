@@ -1,315 +1,180 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <title>Xueer Lu's works</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="bootstrap-grid.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Xueer Lu Portfolio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400;1,6..72,500&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <div class="bio-cont">
-        <div class="me-head">Hey, 你好！</div>
-        <div class="bio">
-            <p>Thanks for stopping by! I'm Xueer Lu. I'm a bilingual journalist and communications professional based in the San Francisco Bay Area, with a background in data journalism, multimedia storytelling, and multi-channel communications at newsrooms in both China and the U.S.</p>
-            <p>At Mission Local, a nonprofit newsroom in San Francisco, I cover politics, government, housing, and community affairs. Alongside my reporting, I support the newsroom's communications work, produce bilingual content, and build webpages and dashboards as the organization continues to grow. My work sits at the intersection of clear writing, data, and community engagement.</p>
-            <p>I hold a Master of Journalism from UC Berkeley's Graduate School of Journalism and a Graduate Certificate in Applied Data Science. My thesis investigated a piece of legislation aiming to reduce microplastic pollution in Monterey Bay, combining data analysis, environmental reporting, and policy tracking.</p>
-            <p>I started my journalism journey at Nanjing University's student publications back in 2018 and then as a tech reporter in Beijing before coming to California in 2021, where I've been living since.</p>
-            <p>I'm drawn to organizations and companies where storytelling serves a larger mission, whether that's informing a community, advancing a cause, or making complex ideas accessible to the people who need them most.</p>
-            <p>You can check out my resume <a href="resume-xueer-lu-new.pdf" target="_blank" class="nav-item">here</a> or check out my recent writing at Mission Local <a href="https://missionlocal.org/author/xueerl/" target="_blank" class="nav-item">here</a>. You can also reach out to me via email at <span style="font-style: italic;">agnesxueerlu at gmail dot com</span>.</p>
-            <p>I'm now open to communications, editorial, content, and nonprofit development roles.</p>
-        </div>
+<div class="wrap">
+  <header class="masthead">
+    <div class="dateline">
+      <span>Data Reporter &amp; Newsroom Developer</span>
     </div>
-
-    <!-- Tab navigation -->
-    <div class="tabs-cont">
-        <div class="tabs-header">
-            <div class="me-head" style="margin-bottom: 20px;">Selected works</div>
-            <div class="tabs-nav">
-                <button class="tab-btn active" onclick="switchTab('data')">Data</button>
-                <button class="tab-btn" onclick="switchTab('writing')">Writing</button>
-            </div>
-        </div>
+    <h1 class="name">Xueer <em>Lu</em></h1>
+    <p class="thesis">I build the <mark>tools, dashboards, and interactives</mark> to help readers better understand San Francisco and its neighborhoods — and document the <mark>stories</mark> in between.</p>
+    <div class="cta">
+      <a class="btn" href="#work">Projects</a>
+      <a class="btn" href="#reporting">Writing</a>
+      <a class="btn" href="#about">About</a>
+      <a class="btn" href="https://agnesxlu.github.io/resume-xueer-lu-new.pdf">Resume (PDF)</a>
+      <span class="email"><span id="email-text">agnesxueerlu@gmail.com</span><button type="button" id="copy-email">Copy</button></span>
     </div>
+  </header>
+</div>
 
-    <!-- DATA TAB -->
-    <div id="tab-data" class="tab-panel">
-    <div class="container">
-        <div class="row project-cont">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4 projects-wrapper">
-                <a href="https://missionlocal.org/2026-elections/" target="_blank" class="projects-link">
-                    <div class="projects">
-                        <div class="project-img">
-                            <img src="projects/election-dashboard-2026.jpg" alt="2026 San Francisco Election Dashboard">
-                        </div>
-                        <div class="project-title">2026 San Francisco Election Dashboard</div>
-                        <div class="project-outlet">Mission Local</div>
-                        <div class="project-desc">An interactive dashboard tracking the 2026 San Francisco elections and coverage.</div>
-                        <div class="project-method">Wordpress, HTML, CSS, Javascript</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4 projects-wrapper">
-                <a href="https://missionlocal.org/2026/02/sf-mayor-daniel-lurie-influencer-instagram-small-business-social-media/" target="_blank" class="projects-link">
-                    <div class="projects">
-                        <div class="project-img">
-                            <img src="projects/lurie-social-media.jpg" alt="Mayor Lurie's Instagram small business visits">
-                        </div>
-                        <div class="project-title">Lurie, the small business influencer</div>
-                        <div class="project-outlet">Mission Local</div>
-                        <div class="project-desc">Tracking Lurie's small business Instagram visits and asking those businesses how they felt.</div>
-                        <div class="project-method">Datawrapper, Canva</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4 projects-wrapper">
-                <a href="https://missionlocal.org/2026/01/sf-mission-district-street-teams/" target="_blank" class="projects-link">
-                    <div class="projects">
-                        <div class="project-img">
-                            <img src="projects/street-teams.jpg" alt="Mission District street teams explainer">
-                        </div>
-                        <div class="project-title">The Mission's street teams, explained</div>
-                        <div class="project-outlet">Mission Local</div>
-                        <div class="project-desc">Meet the five groups that make up the Mission's street team and understand who does what.</div>
-                        <div class="project-method">Adobe Illustrator, ai2html</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4 projects-wrapper">
-                <a href="https://missionlocal.org/2026/01/sf-charter-reform-working-group/" target="_blank" class="projects-link">
-                    <div class="projects">
-                        <div class="project-img">
-                            <img src="projects/charter-reform-working-group.jpg" alt="SF charter reform working group">
-                        </div>
-                        <div class="project-title">Inside S.F.'s charter reform group</div>
-                        <div class="project-outlet">Mission Local</div>
-                        <div class="project-desc">A visual guide to the 31-person working group rewriting S.F.'s charter.</div>
-                        <div class="project-method">HTML, CSS, Adobe Illustrator</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4 projects-wrapper">
-                <a href="https://missionlocal.org/2025/02/live-updates-daniel-luries-administration-whos-in-whos-out/" target="_blank" class="projects-link">
-                    <div class="projects">
-                        <div class="project-img">
-                            <img src="projects/lurie.jpg" alt="Lurie's City Hall chart">
-                        </div>
-                        <div class="project-title">Tracking Daniel Lurie's administration</div>
-                        <div class="project-outlet">Mission Local</div>
-                        <div class="project-desc">A live update chart on the comings and goings at San Francisco City Hall.</div>
-                        <div class="project-method">HTML, CSS, Adobe Illustrator</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4 projects-wrapper">
-                <a href="https://missionlocal.org/2024/01/one-sf-neighborhoods-response-to-homelessness-2000-plus-planters/" target="_blank" class="projects-link">
-                    <div class="projects">
-                        <div class="project-img">
-                            <img src="projects/planters.gif" alt="Homeless planter project">
-                        </div>
-                        <div class="project-title">The Mission's 2,000 planters</div>
-                        <div class="project-outlet">Mission Local</div>
-                        <div class="project-desc">Maps and scrolly archive to document sidewalk planters and stories behind them.</div>
-                        <div class="project-method">Mapbox, geojson.io, HTML, CSS, Javascript</div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4 projects-wrapper">
-                <a href="https://missionlocal.org/2024/11/explore-how-much-did-your-vote-cost-in-the-s-f-november-election-use-our-tool-to-find-out/" target="_blank" class="projects-link">
-                <div class="projects">
-                    <div  class="project-img">
-                        <img src="projects/vote-cost.jpg" alt="vote cost calculator">
-                    </div>
-                    <div class="project-title">Cost per vote calculator</div>
-                    <div class="project-outlet">Mission Local</div>
-                    <div class="project-desc">An interactive calculator to see how much your ballot cost in the November 2024 election.</div>
-                    <div class="project-method">Python/Pandas, HTML, CSS, Javascript</div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4 projects-wrapper">
-                <a href="https://missionlocal.org/2025/06/explore-san-francisco-neighborhoods-in-data/" target="_blank" class="projects-link">
-                <div class="projects">
-                    <div  class="project-img">
-                        <img src="projects/neighborhood-data.jpg" alt="Explore San Francisco neighborhoods in data">
-                    </div>
-                    <div class="project-title">S.F. neighborhoods in data</div>
-                    <div class="project-outlet">Mission Local</div>
-                    <div class="project-desc">An interactive explorer of demographics in each S.F. neighborhood and census tract.</div>
-                    <div class="project-method">Python/Pandas, HTML, CSS, Javascript, Bootstrap</div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4 projects-wrapper">
-                <a href="https://missionlocal.org/2025/03/sf-district-supervisor-tool-who-they-are-what-they-do/" target="_blank" class="projects-link">
-                <div class="projects">
-                    <div  class="project-img">
-                        <img src="projects/supervisor-lookup.jpg" alt="supervisor lookup tool">
-                    </div>
-                    <div class="project-title">Supervisor lookup tool</div>
-                    <div class="project-outlet">Mission Local</div>
-                    <div class="project-desc">A one-stop shop to get to know the supervisors, their aides, and how to get in touch.</div>
-                    <div class="project-method">HTML, CSS, Javascript, Adobe Illustrator</div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4 projects-wrapper">
-                <a href="https://missionlocal.org/2025/03/san-francisco-mission-street-vending-ban-timeline/" target="_blank" class="projects-link">
-                <div class="projects">
-                    <div  class="project-img">
-                        <img src="projects/vending-scrolly.png" alt="vending ban history">
-                    </div>
-                    <div class="project-title">Vending ban timeline</div>
-                    <div class="project-outlet">Mission Local</div>
-                    <div class="project-desc">A visual chronology of what has been tried over the last two years to discourage unpermitted vending on Mission Street.</div>
-                    <div class="project-method">HTML, CSS, Javascript, Adobe Photoshop, geojson.io</div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4 projects-wrapper">
-                <a href="https://www.sfchronicle.com/projects/2022/water-conservation-california/" target="_blank" class="projects-link">
-                <div class="projects">
-                    <div  class="project-img">
-                        <img src="projects/water-conservation.gif" alt="Water conservation tips">
-                    </div>
-                    <div class="project-title">At-home water conservation tips</div>
-                    <div class="project-outlet">San Francisco Chronicle</div>
-                    <div class="project-desc">An illustrated guide on how to conserve water at home in the bathroom, kitchen, laundry room, and yard. </div>
-                    <div class="project-method">React, CSS</div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4 projects-wrapper">
-                <a href="https://media.journalism.berkeley.edu/projects/2023/20230501_microplastics/" target="_blank" class="projects-link">
-                <div class="projects">
-                    <div  class="project-img">
-                        <img src="projects/microplastics.jpg" alt="Microplastics in Monterey Bay">
-                    </div>
-                    <div class="project-title">Microplastics plague Monterey Bay</div>
-                    <div class="project-outlet">UC Berkeley Graduate School of Journalism</div>
-                    <div class="project-desc">An illustrated explainer on how better washing machines could mitigate microplastics pollution.</div>
-                    <div class="project-method">Procreate, Figma, Readymag</div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4 projects-wrapper">
-                <a href="https://missionlocal.org/2023/11/update-three-days-into-street-vending-ban/" target="_blank" class="projects-link">
-                <div class="projects">
-                    <div class="project-img">
-                        <img src="projects/vending-ban.jpg" alt="How has the vending ban worked">
-                    </div>
-                    <div class="project-title">Mission Street Vending Ban</div>
-                    <div class="project-outlet">Mission Local</div>
-                    <div class="project-desc">Documenting vendors, cops, and city inspectors for the first week of the vending ban.</div>
-                    <div class="project-method">HTML, CSS, Javascript, Adobe Illustrator</div>
-                </div>
-                </a>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4 projects-wrapper">
-                <a href="https://missionlocal.org/election2024/" target="_blank" class="projects-link">
-                <div class="projects">
-                    <div class="project-img">
-                        <img src="projects/election-dashboard.jpg" alt="San Francisco Election Dashboard">
-                    </div>
-                    <div class="project-title">San Francisco Election Dashboard</div>
-                    <div class="project-outlet">Mission Local</div>
-                    <div class="project-desc">A hub for information and coverage on local races and campaign finance.</div>
-                    <div class="project-method">Adobe Illustrator, Wordpress, HTML, CSS, Javascript</div>
-                </div>
-                </a>
-            </div>
-        </div>
+<section id="featured">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2>Featured builds</h2>
+      </div>
+      <a class="btn primary" href="#work">View all projects</a>
     </div>
-    </div> <!-- end tab-data -->
-
-    <!-- WRITING TAB -->
-    <div id="tab-writing" class="tab-panel" style="display:none;">
-        <div class="writing-cont">
-            <ul class="writing-list">
-                <li class="writing-item">
-                    <a href="https://missionlocal.org/2025/10/sf-prop-e-commission-streamlining-gets-messy/" target="_blank" class="writing-link">
-                        <span class="writing-title">Prop. E was supposed to rein in S.F. mayor's power. Instead, it's recommending the opposite.</span>
-                        <span class="writing-meta"><span class="writing-pub">Mission Local</span><span class="writing-sep">·</span><span class="writing-date">Oct. 3, 2025</span></span>
-                    </a>
-                </li>
-                <li class="writing-item">
-                    <a href="https://missionlocal.org/2026/03/sf-sales-tax-data-excelsior-tourism/" target="_blank" class="writing-link">
-                        <span class="writing-title">Excelsior's post-pandemic recovery shows it can pay to shrug off tourism</span>
-                        <span class="writing-meta"><span class="writing-pub">Mission Local</span><span class="writing-sep">·</span><span class="writing-date">March 10, 2026</span></span>
-                    </a>
-                </li>
-                <li class="writing-item">
-                    <a href="https://missionlocal.org/2025/12/sf-thomas-paine-video-christmas-burglary/" target="_blank" class="writing-link">
-                        <span class="writing-title">Nightmare before Christmas: Fillmore low-income tenants say housing staff stole their Christmas gifts</span>
-                        <span class="writing-meta"><span class="writing-pub">Mission Local</span><span class="writing-sep">·</span><span class="writing-date">Dec. 19, 2025</span></span>
-                    </a>
-                </li>
-                <li class="writing-item">
-                    <a href="https://missionlocal.org/2025/06/sf-planning-director-process-illegal-commission/" target="_blank" class="writing-link">
-                        <span class="writing-title">New S.F. planning director's appointment process was illegal, commissioner says</span>
-                        <span class="writing-meta"><span class="writing-pub">Mission Local</span><span class="writing-sep">·</span><span class="writing-date">June 27, 2025</span></span>
-                    </a>
-                </li>
-                <li class="writing-item">
-                    <a href="https://missionlocal.org/2025/05/daniel-lurie-1500-shelter-treatment-bed-goal/" target="_blank" class="writing-link">
-                        <span class="writing-title">Mayor Lurie promised 1,500 new shelter beds. Here's how he's doing.</span>
-                        <span class="writing-meta"><span class="writing-pub">Mission Local</span><span class="writing-sep">·</span><span class="writing-date">May 26, 2025</span></span>
-                    </a>
-                </li>
-                <li class="writing-item">
-                    <a href="https://missionlocal.org/2025/05/sf-housing-department-eviction-data/" target="_blank" class="writing-link">
-                        <span class="writing-title">S.F. housing department's eviction data is incomplete, advocates say</span>
-                        <span class="writing-meta"><span class="writing-pub">Mission Local</span><span class="writing-sep">·</span><span class="writing-date">May 19, 2025</span></span>
-                    </a>
-                </li>
-                <li class="writing-item">
-                    <a href="https://missionlocal.org/2025/05/sf-drug-crisis-no-metrics-zurich-four-pillars-strategy/" target="_blank" class="writing-link">
-                        <span class="writing-title">How can S.F. tell if its approach to the drug crisis is working?</span>
-                        <span class="writing-meta"><span class="writing-pub">Mission Local</span><span class="writing-sep">·</span><span class="writing-date">May 15, 2025</span></span>
-                    </a>
-                </li>
-                <li class="writing-item">
-                    <a href="https://missionlocal.org/2025/05/sf-behavioral-health-center-add-remove-beds-department-public-health/" target="_blank" class="writing-link">
-                        <span class="writing-title">Mayor Lurie's plan to add new treatment beds removes 97 current ones</span>
-                        <span class="writing-meta"><span class="writing-pub">Mission Local</span><span class="writing-sep">·</span><span class="writing-date">May 13, 2025</span></span>
-                    </a>
-                </li>
-                <li class="writing-item">
-                    <a href="https://missionlocal.org/2025/05/sf-thomas-paine-fillmore-housing-negligence/" target="_blank" class="writing-link">
-                        <span class="writing-title">Tenants of Fillmore low-income housing, owned by Black church, plead for help</span>
-                        <span class="writing-meta"><span class="writing-pub">Mission Local</span><span class="writing-sep">·</span><span class="writing-date">May 8, 2025</span></span>
-                    </a>
-                </li>
-                <li class="writing-item">
-                    <a href="https://missionlocal.org/2025/03/s-f-homeless-families-say-mayor-lurie-promised-reprieve-they-got-eviction-notices-anyway/" target="_blank" class="writing-link">
-                        <span class="writing-title">S.F. homeless families say Mayor Lurie promised reprieve. They got eviction notices instead.</span>
-                        <span class="writing-meta"><span class="writing-pub">Mission Local</span><span class="writing-sep">·</span><span class="writing-date">March 6, 2025</span></span>
-                    </a>
-                </li>
-                
-            </ul>
-            <p class="writing-more">Read more of my work at <a href="https://missionlocal.org/author/xueerl/" target="_blank" class="nav-item">Mission Local</a>.</p>
+    <div class="featured">
+      <article class="feat">
+        <a class="feat-img" href="https://missionlocal.org/2026/10/2026-san-francisco-voter-guide/"><img src="img/voter-guide.jpg" alt="2026 San Francisco Voter Guide from Mission Local"></a>
+        <div class="feat-body">
+          <span class="kind">Voter guide · Oct. 2026</span>
+          <h3><a href="https://missionlocal.org/2026/10/2026-san-francisco-voter-guide/">2026 San Francisco Voter Guide</a></h3>
+          <p>Mission Local's guide to the November 2026 ballot, covering candidate background and stances, propositions and endorsements. Readers can enter their San Francisco address to see their own ballot, or scroll through the full guide. View project <a href="https://missionlocal.github.io/2026-election-dashboard/voter-guide/">here</a>.</p>
+          <dl class="how">
+            <dt>Built in</dt><dd>HTML, CSS, JavaScript, Mapbox</dd>
+            <dt>Role</dt><dd>Design, development, reporting</dd>
+          </dl>
+          <a class="open" href="https://missionlocal.org/2026/10/2026-san-francisco-voter-guide/">Open the voter guide →</a>
         </div>
-    </div> <!-- end tab-writing -->
+      </article>
+      <article class="feat">
+        <a class="feat-img" href="https://missionlocal.org/2024/11/explore-how-much-did-your-vote-cost-in-the-s-f-november-election-use-our-tool-to-find-out/"><img src="img/vote-cost.jpg" alt="Cost per vote calculator from Mission Local"></a>
+        <div class="feat-body">
+          <span class="kind">Calculator · Nov. 2024</span>
+          <h3><a href="https://missionlocal.org/2024/11/explore-how-much-did-your-vote-cost-in-the-s-f-november-election-use-our-tool-to-find-out/">How much did your vote cost?</a></h3>
+          <p>A calculator that shows readers what campaigns spent per ballot in San Francisco's November 2024 election.</p>
+          <dl class="how">
+            <dt>Data</dt><dd>Python/Pandas</dd>
+            <dt>Front end</dt><dd>HTML, CSS, JavaScript</dd>
+            <dt>Role</dt><dd>Design, development, reporting</dd>
+          </dl>
+          <a class="open" href="https://missionlocal.org/2024/11/explore-how-much-did-your-vote-cost-in-the-s-f-november-election-use-our-tool-to-find-out/">Try the calculator →</a>
+        </div>
+      </article>
+      <article class="feat">
+        <a class="feat-img" href="https://missionlocal.org/2025/06/explore-san-francisco-neighborhoods-in-data/"><img src="img/neighborhood-data.jpg" alt="S.F. neighborhoods in data explorer"></a>
+        <div class="feat-body">
+          <span class="kind">Data explorer · June 2025</span>
+          <h3><a href="https://missionlocal.org/2025/06/explore-san-francisco-neighborhoods-in-data/">S.F. neighborhoods in data</a></h3>
+          <p>An explorer of demographics for every San Francisco neighborhood, down to the census tract.</p>
+          <dl class="how">
+            <dt>Data</dt><dd>Python/Pandas</dd>
+            <dt>Front end</dt><dd>HTML, CSS, JavaScript, Bootstrap</dd>
+            <dt>Role</dt><dd>Design, development, reporting</dd>
+          </dl>
+          <a class="open" href="https://missionlocal.org/2025/06/explore-san-francisco-neighborhoods-in-data/">Explore your neighborhood →</a>
+        </div>
+      </article>
+      <article class="feat">
+        <a class="feat-img" href="https://missionlocal.org/2026-elections/"><img src="img/2026-election-dashboard.jpg" alt="Mission Local's 2026 San Francisco Elections dashboard, with an illustrated skyline header and a navigation bar for key dates, Congress, supervisor, school board, ballot measures and campaign finance"></a>
+        <div class="feat-body">
+          <span class="kind">Dashboard · 2026</span>
+          <h3><a href="https://missionlocal.org/2026-elections/">2026 San Francisco Election Dashboard</a></h3>
+          <p>Mission Local's home for the 2026 elections, built as a newsroom product. Alongside the latest news, key dates, and sections for races, ballot measures and campaign finance, the pages also carry small interactive tools throughout.</p>
+          <dl class="how">
+            <dt>Built in</dt><dd>WordPress, HTML, CSS, JavaScript</dd>
+            <dt>Lineage</dt><dd>Second edition, building on the 2024 version</dd>
+          </dl>
+          <a class="open" href="https://missionlocal.org/2026-elections/">Open the dashboard →</a>
+        </div>
+      </article>
+      <article class="feat">
+        <a class="feat-img" href="https://missionlocal.org/2024/01/one-sf-neighborhoods-response-to-homelessness-2000-plus-planters/"><img src="img/planters.jpg" alt="Map of sidewalk planters in the Mission District"></a>
+        <div class="feat-body">
+          <span class="kind">Map + scrollytelling · Jan. 2024</span>
+          <h3><a href="https://missionlocal.org/2024/01/one-sf-neighborhoods-response-to-homelessness-2000-plus-planters/">The Mission's 2,000 planters</a></h3>
+          <p>A mapped archive of the sidewalk planters that appeared across the Mission, paired with a scrolling story around their controversies.</p>
+          <dl class="how">
+            <dt>Built in</dt><dd>Mapbox, Geojson.io, HTML, CSS, JavaScript</dd>
+            <dt>Role</dt><dd>Design, development, reporting</dd>
+          </dl>
+          <a class="open" href="https://missionlocal.org/2024/01/one-sf-neighborhoods-response-to-homelessness-2000-plus-planters/">Scroll the map →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
-    <script>
-        function switchTab(tab) {
-            document.getElementById('tab-data').style.display = tab === 'data' ? '' : 'none';
-            document.getElementById('tab-writing').style.display = tab === 'writing' ? '' : 'none';
-            document.querySelectorAll('.tab-btn').forEach(function(btn) {
-                btn.classList.remove('active');
-            });
-            event.currentTarget.classList.add('active');
-        }
-    </script>
+<section id="work">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2>All interactive &amp; visual work</h2>
+      </div>
+      <p class="filter-hint">Filter by project type <span aria-hidden="true">↓</span></p>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Filter by project type"></div>
+    <div class="grid" id="grid" aria-live="polite"></div>
+  </div>
+</section>
+
+<section id="reporting">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2>Reporting and Writing</h2>
+      </div>
+    </div>
+    <ul class="stories">
+      <li><a href="https://missionlocal.org/2025/05/sf-thomas-paine-fillmore-housing-negligence/"><time datetime="2025-05-08">May 8, 2025</time><div class="story-body"><span class="t">Tenants of Fillmore low-income housing, owned by Black church, plead for help</span><ul class="tags"><li>Housing</li></ul></div></a></li>
+      <li><a href="https://missionlocal.org/2025/12/sf-thomas-paine-video-christmas-burglary/"><time datetime="2025-12-19">Dec. 19, 2025</time><div class="story-body"><span class="t">Nightmare before Christmas: Fillmore low-income tenants say housing staff stole their Christmas gifts</span><ul class="tags"><li>Housing</li></ul></div></a></li>
+      <li><a href="https://missionlocal.org/2025/10/sf-prop-e-commission-streamlining-gets-messy/"><time datetime="2025-10-03">Oct. 3, 2025</time><div class="story-body"><span class="t">Prop. E was supposed to rein in S.F. mayor's power. Instead, it's recommending the opposite.</span><ul class="tags"><li>Government</li><li>Politics</li></ul></div></a></li>
+      <li><a href="https://missionlocal.org/2025/03/s-f-homeless-families-say-mayor-lurie-promised-reprieve-they-got-eviction-notices-anyway/"><time datetime="2025-03-06">Mar. 6, 2025</time><div class="story-body"><span class="t">S.F. homeless families say Mayor Lurie promised reprieve. They got eviction notices instead.</span><ul class="tags"><li>Homelessness</li><li>Housing</li></ul></div></a></li>
+      <li><a href="https://missionlocal.org/2025/06/sf-planning-director-process-illegal-commission/"><time datetime="2025-06-27">June 27, 2025</time><div class="story-body"><span class="t">New S.F. planning director's appointment process was illegal, commissioner says</span><ul class="tags"><li>Government</li></ul></div></a></li>
+      <li><a href="https://missionlocal.org/2025/05/daniel-lurie-1500-shelter-treatment-bed-goal/"><time datetime="2025-05-26">May 26, 2025</time><div class="story-body"><span class="t">Mayor Lurie promised 1,500 new shelter beds. Here's how he's doing.</span><ul class="tags"><li>Homelessness</li><li>Government</li></ul></div></a></li>
+      <li><a href="https://missionlocal.org/2025/05/sf-drug-crisis-no-metrics-zurich-four-pillars-strategy/"><time datetime="2025-05-15">May 15, 2025</time><div class="story-body"><span class="t">How can S.F. tell if its approach to the drug crisis is working?</span><ul class="tags"><li>Public health</li><li>Government</li></ul></div></a></li>
+      <li><a href="https://missionlocal.org/2025/05/sf-behavioral-health-center-add-remove-beds-department-public-health/"><time datetime="2025-05-13">May 13, 2025</time><div class="story-body"><span class="t">Mayor Lurie's plan to add new treatment beds removes 97 current ones</span><ul class="tags"><li>Public health</li><li>Homelessness</li></ul></div></a></li>
+      <li><a href="https://missionlocal.org/2026/03/sf-sales-tax-data-excelsior-tourism/"><time datetime="2026-03-10">Mar. 10, 2026</time><div class="story-body"><span class="t">Excelsior's post-pandemic recovery shows it can pay to shrug off tourism</span><ul class="tags"><li>Economy</li><li>Data</li></ul></div></a></li>
+      <li><a href="https://missionlocal.org/2026/05/my-excelsior-italian-american-social-club-julie-clima-leila-moylett/"><time datetime="2026-05-16">May. 16, 2026</time><div class="story-body"><span class="t">My Excelsior: Julie Clima and Leila Moylett ran a men's-only social club for decades</span><ul class="tags"><li>Culture</li></ul></div></a></li>
+      <li><a href="https://missionlocal.org/2026/06/unbound-bookstore-sf-chinatown/"><time datetime="2026-06-19">June 19, 2026</time><div class="story-body"><span class="t">San Francisco's Chinatown lost all its bookstores. Then came Unbound.</span><ul class="tags"><li>Culture</li></ul></div></a></li>
+      <li><a href="https://missionlocal.org/2026/06/people-we-meet-frank-maldonado/"><time datetime="2026-06-06">June 6, 2026</time><div class="story-body"><span class="t">People We Meet: Frank Maldonado, the boxing coach</span><ul class="tags"><li>Culture</li></ul></div></a></li>
+    </ul>
+    <p class="more"><a href="https://missionlocal.org/author/xueerl/">Read more of my work at Mission Local →</a></p>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <h2>About Me</h2>
+    </div>
+    <div class="about-body">
+      <p>Hello, 你好 👋</p>
+      <p>I'm Xueer, a bilingual journalist at Mission Local, a nonprofit newsroom in San Francisco. I build the newsroom's webpages, dashboards and interactive tools as it grows, and I write about the Excelsior neighborhood and a variety of topics like culture, small businesses, government and politics.</p>
+      <p>I love building tools that make content more efficient and engaging, and exploring how AI can help along the way.</p>
+      <p>I started in journalism at Nanjing University's student publications in 2018 in China, worked as a tech reporter and social media lead in Beijing, and moved to California in 2021.</p>
+      <dl class="facts">
+        <dt>Education</dt><dd>Master of Journalism, UC Berkeley Graduate School of Journalism<br>Graduate Certificate in Applied Data Science, UC Berkeley School of Information<br>Bachelor of Arts in English, Nanjing University</dd>
+        <dt>Masters Thesis</dt><dd>An investigation of legislation to reduce microplastic pollution in Monterey Bay, combining environmental reporting and multimedia</dd>
+        <dt>Languages</dt><dd>English, Mandarin Chinese</dd>
+        <dt>Contact</dt><dd>agnesxueerlu@gmail.com</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <footer>
+    <p>Xueer Lu · 2026 · San Francisco Bay Area</p>
+    <div class="cta">
+      <a class="btn" href="https://agnesxlu.github.io/resume-xueer-lu-new.pdf">Resume (PDF)</a>
+    </div>
+  </footer>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
